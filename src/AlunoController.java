@@ -4,11 +4,14 @@ import java.util.List;
 import java.util.Map;
 
 public class AlunoController {
-    private Map <String, Aluno> alunos = new HashMap<>();
-    private Map <String, Grupo> grupos = new HashMap<>();
-    private List<Aluno> responderamQuestoes = new ArrayList<>();
+    private Map <String, Aluno> alunos;
+    private Map <String, Grupo> grupos;
+    private List<Aluno> responderamQuestoes;
 
     public AlunoController() {
+        this.alunos = new HashMap<>();
+        this.grupos = new HashMap<>();
+        this.responderamQuestoes = new ArrayList<>();
     }
 
     public void cadastraAluno(Aluno aluno){
